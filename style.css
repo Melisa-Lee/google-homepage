@@ -182,13 +182,23 @@ html, body {
     }
 }
 
+@media (max-width: 420px) {
+    .search-bar {
+        width: 20em;
+        text-align: center;
+    }
+
+    .search-bar .search-text-area {
+        width: 12em;
+    }
+}
+
 @media (max-width: 380px) {
     .footer {
         background-color: var(--main-light-grey);
         width: 100%;
         height: 20vh;
-        margin-bottom: -150px;
-        padding-bottom: -200px;
+        margin-bottom: 0px;
     }
     
     .footer-left {
@@ -197,7 +207,7 @@ html, body {
     }
 
     .footer-right {
-        padding: 0;
+        padding: -0px;
         margin: 0;
     }
 
@@ -233,5 +243,49 @@ html, body {
         position: relative;
         margin-bottom: 28px;    
         left: -4%;    
+    }
+}
+
+@media (max-width: 280px) {
+    .navbar {
+        padding: 0;
+        margin-right: 9px; 
+        float: none;
+    }
+
+    #right-nav {
+        display: inline-block;
+        font-size: 15px;
+    }
+    
+    .main {
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 20px;
+    }
+
+    .main img {
+        width: 230px;
+        height: auto;
+    }
+
+    .search-bar {
+        max-width: 15em;
+    }
+
+    .search-bar .search-text-area {
+        width: 10em;
+    }
+
+    .search-bar {
+        width: 18em;
+        text-align: center;
+        height: 20px;
+    }
+
+    .search-bar .search-text-area {
+        width: 8em;
+        margin-left: 0.35m;
+        text-align: left;
     }
 }
